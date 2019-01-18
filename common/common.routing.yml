@@ -1,0 +1,11 @@
+common.content:
+  path: '/page_json/{api_key}/{nid}'
+  defaults:
+    _title: 'Node page'
+    _controller: '\Drupal\common\Controller\CommonController::nodeContent'
+  methods: [GET]
+  requirements:
+    _access: 'TRUE'
+  requirements:
+    _permission: 'access content'
+  nid: \d+
